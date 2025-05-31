@@ -1,0 +1,125 @@
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  background-color: white;
+}
+
+.m-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+}
+
+.m-header > .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: 2px solid #eee;
+  padding: 10px 26px;
+}
+
+.m-header .cross-btn {
+  width: 40px;
+  height: 40px;
+  color: black;
+  background-color: #f0f1f5;
+  border: 1px solid #868686;
+  font-size: 1rem;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+  font-weight: 900;
+}
+
+.mobile-profile {
+  padding: 20px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-profile-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-profile-left > .mobile-profile-icon {
+  background-color: black;
+  color: white;
+  padding: 26px 25px;
+  border-radius: 100%;
+}
+
+.mobile-profile-left .mobile-profile-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mobile-profile-detail > .name {
+  font-size: 1rem;
+}
+
+.mobile-profile-detail > .view-profile {
+  font-size: 0.8rem;
+}
+
+.mobile-profile-right {
+  font-size: 2rem;
+  color: rgb(165, 176, 191);
+}
+
+.mobile-profile-btn-main {
+  padding: 20px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+.mobile-profile-btn-main .mobile-profile-btn {
+  padding: 13px 18px;
+  background-color: #ecedfa;
+  color: #3e48ce;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.accordian-main {
+  padding: 20px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #eee;
+}
+
+.logout {
+  padding: 20px 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-icon {
+  padding-top: 10px;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  color: red;
+}
+
+.logout p {
+  font-weight: 900;
+}

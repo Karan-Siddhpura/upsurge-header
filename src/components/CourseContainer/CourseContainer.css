@@ -1,0 +1,50 @@
+.course-container {
+  background-color: rgba(240, 241, 245, 0.12);
+  border: 1px solid #ecedfa;
+  border-radius: 10px;
+  padding: 21px;
+  font-family: Arial, sans-serif;
+  color: black;
+  height: 170px;
+}
+
+.course-container > .is-new {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #e6004c;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-title {
+  color: #2f2f2f;
+  font-weight: 600;
+}
+
+.content-p {
+  max-width: 270px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #868686;
+  text-wrap: auto;
+}
+
+.content-link {
+  cursor: pointer;
+  display: flex;
+  color: #3e48ce;
+}
+
+.content-link > p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}

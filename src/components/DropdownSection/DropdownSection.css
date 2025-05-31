@@ -114,3 +114,7 @@
   transform: translateX(10px);
   transition: all 0.6s ease;
 }
+
+.course-item > p {
+  max-width: 255px;
+}

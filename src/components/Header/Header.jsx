@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./Header.css";
+import Dropdown from "../Dropdown/Dropdown";
 import { GoChevronDown } from "react-icons/go";
 import { CiSearch } from "react-icons/ci";
+import ProfileMenu from "../ProfileMenu/ProfileMenu";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Mobilemenu from "../Mobilemenu/Mobilemenu";
 import { Link } from "react-router-dom";
@@ -35,13 +37,17 @@ const Header = () => {
                 <p>Upsurge</p>
               </Link>
 
-              <div>
+              <div
+                onMouseEnter={() => handleMouseEnter("courses")}
+                onMouseLeave={handleMouseLeave}
+              >
                 <div className="nav-item">
                   <p>Courses</p>
                   <div className="nav-icon">
                     <GoChevronDown />
                   </div>
                 </div>
+                {activeDropdown === "courses" && <Dropdown type="courses" />}
               </div>
 
               <div
@@ -75,8 +81,13 @@ const Header = () => {
               <Link to="/test" className="my-learinig-btn">
                 <p>My Learning</p>
               </Link>
-              <div className="profile">
+              <div
+                className="profile"
+                onMouseEnter={() => handleMouseEnter("profile")}
+                onMouseLeave={handleMouseLeave}
+              >
                 <p>ab</p>
+                {activeDropdown === "profile" && <ProfileMenu />}
               </div>
             </div>
           </div>
@@ -94,9 +105,9 @@ const Header = () => {
               <div className="search-icon">
                 <CiSearch />
               </div>
-              <Link to="/test" className="my-learinig-btn">
+              <div className="my-learinig-btn">
                 <p>My Learning</p>
-              </Link>
+              </div>
             </div>
           </div>
         </div>

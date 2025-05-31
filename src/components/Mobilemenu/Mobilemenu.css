@@ -35,6 +35,7 @@
   display: grid;
   place-content: center;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .mobile-profile {

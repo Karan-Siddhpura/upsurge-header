@@ -195,6 +195,7 @@
     border-radius: 100%;
     display: grid;
     place-content: center;
+    cursor: pointer;
   }
 
   .right-section {
